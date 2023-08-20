@@ -1,0 +1,100 @@
+Name: Doruk Savasan
+Email: doruks@bu.edu
+
+
+puzzles with 5-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			10		5.0		175.0
+BFS			10		5.0		47.1
+DFS (depth limit 20)	10		16.2		19072.7
+DFS (depth limit 50)	10		48.2		49043.0		
+Greedy Search (using h1)	10		5.4		70.4 
+A* (using h1)		10		5.0		6.7
+
+
+puzzles with 10-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			10		12.2		13252.5							
+BFS			10		10		747.4							
+DFS (depth limit 20)	10		18.8		24858.0					
+DFS (depth limit 50)	10		49.9		92287.3	
+Greedy Search (using h1)	10		77.8		1470.4 
+A* (using h1)		10		10.0		30.2		
+
+
+puzzles with 15-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			10		19.8		37655.5
+BFS			10		15.0		12672.0		
+DFS (depth limit 20)	10		17.8		68659.0
+DFS (depth limit 50)	10		48.6		111406.0
+Greedy Search (using h1)	10		109.0 		9274.3
+A* (using h1)		10		15.0		347.7
+
+
+
+heuristic h2
+------------
+My heuristic function calculates the distance between the actual spot of the tile and its GOAL_STATE and then gives it a point based its distance. That's why I believe it really helps the Greedy and the A* algorithms to work much faster. 
+
+
+puzzles with 18-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	3		71.3		613.3
+Greedy (heuristic h2)	10		76.2		725.7
+
+
+A* (heuristic h1)	10		18.0		1861.7
+A* (heuristic h2)	10		18.0		239.3
+
+
+
+puzzles with 21-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	0
+Greedy (heuristic h2)	10		75.4		370.7		
+
+
+A* (heuristic h1)	10		21.0		7728.5
+A* (heuristic h2)	10		21.0		482.3
+
+
+puzzles with 24-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	5		172.4		8414.8
+Greedy (heuristic h2)	10		75.2		593.3
+
+
+A* (heuristic h1)	10		24.0		31154.2
+A* (heuristic h2)	10		24.0		1065.5
+
+
+puzzles with 27-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	10		163.4		2775.8
+Greedy (heuristic h2)	10		90.8		693.9
+
+
+A* (heuristic h1)	0		0		0
+A* (heuristic h2)	10		27.0		5043.0
+
+
+
+
+
+
+
